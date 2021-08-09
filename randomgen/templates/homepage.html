@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron">
+      {% block body %}
+<h2>Welcome to our Random Password Generator!!</h2>
+<h4>You can generate a random password by choosing required options.</h4>
+<a href="{% url 'generator' %}"><em>Try it!<em/></a>
+  {% endblock %}
+    </div>
+  </body>
+</html>
